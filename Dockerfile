@@ -5,7 +5,7 @@ WORKDIR /app
 
 # کپی کردن فایل‌های پکیج برای نصب وابستگی‌ها
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 # کپی کردن کل پروژه و بیلد کردن
 COPY . .
