@@ -1,13 +1,18 @@
-import SignupForm from "../components/auth/SignupForm.tsx";
-import SigninForm from "../components/auth/SigninForm.tsx";
+import {Outlet} from "react-router-dom";
+import HeaderComponent from "../components/header-component/HeaderComponent.tsx";
+import FooterComponent from "../components/footer-component/FooterComponent.tsx";
 
 function App() {
     return (
-        <div>
-            <h1>سلام</h1>
-            <SignupForm />
-            <SigninForm />
-        </div>
+        <>
+            <HeaderComponent />
+
+            <main>
+                <Outlet />
+            </main>
+
+            <FooterComponent />
+        </>
     )
 }
 
