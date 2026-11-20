@@ -1,5 +1,5 @@
-import SignupForm from './SignupForm'
-import SigninForm from './SigninForm'
+import SignupForm from "../components/auth/SignupForm.tsx";
+import SigninForm from "../components/auth/SigninForm.tsx";
 
 function App() {
     return (
