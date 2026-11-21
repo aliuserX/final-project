@@ -11,10 +11,13 @@ footer{
     background: #fff;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
-footer button{
+.footer-button{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: aqua;
     flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
