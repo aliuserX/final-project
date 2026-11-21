@@ -1,9 +1,13 @@
-import FooterComponentStyle from './FooterComponent.module.css'
+// import FooterComponentStyle from './FooterComponent.module.css'
 
 function FooterComponent() {
     return (
         <footer>
-            <h2 className={FooterComponentStyle['yellow-red']}>فوتر سایت (ثابت)</h2>
+            <button>۱</button>
+            <button>۲</button>
+            <button>۳</button>
+            <button>۴</button>
+            <button>5</button>
         </footer>
     )
 }
