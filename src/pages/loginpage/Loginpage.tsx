@@ -13,14 +13,20 @@ function LoginPage() {
                 (
                     <span>
                         حساب کاربری ندارید ؟{" "}
-                            <button type="button" onClick={() => setIsSignUp(false)}>
+                            <button
+                                className={LoginStyle['switch-button']}
+                                type="button"
+                                onClick={() => setIsSignUp(false)}>
                                 ثبت نام کنید
                             </button>
                     </span>
                 ) : (
                     <span>
                         حساب کاربری دارید ؟{" "}
-                            <button type="button" onClick={() => setIsSignUp(true)}>
+                            <button
+                                className={LoginStyle['switch-button']}
+                                type="button"
+                                onClick={() => setIsSignUp(true)}>
                                 ورود
                             </button>
                     </span>
