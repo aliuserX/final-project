@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 5px;
     background: white;
     max-width: 1200px;
     margin: 10px auto;
@@ -25,10 +25,33 @@ header a{
 .header-action-buttons{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .header-action-buttons a{
-    padding: 0 10px;
+    padding: 0 5px;
+    border-bottom: 2px solid transparent;
+    height: 30px;
 }
-.active{
+.active-header-action-button{
     color: #0055ff;
+    border-bottom: 2px solid #0055ff !important;
+}
+.menu-button{
+    display: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+@media (max-width: 630px) {
+    .header-action-buttons {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
 }
