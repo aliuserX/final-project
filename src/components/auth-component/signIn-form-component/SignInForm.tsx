@@ -1,7 +1,7 @@
 import {type FormEvent, useState} from "react";
-import {supabase} from "../../lib/supabase.ts";
+import {supabase} from "../../../lib/supabase.ts";
 
-export default function SignupForm() {
+export default function SignInForm() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
@@ -12,20 +12,21 @@ export default function SignupForm() {
         setLoading(true)
         setMessage('')
 
-        const { error } = await supabase.auth.signUp({ email, password })
-        setMessage(error ? error.message : 'ثبت‌نام انجام شد؛ ایمیل تأیید را بررسی کن.')
+        const { error } = await supabase.auth.signInWithPassword({ email, password })
+        setMessage(error ? `ورود ناموفق بود: ${error.message}` : 'ورود موفق بود!')
         setLoading(false)
     }
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>ثبت‌نام</h2>
+            <span>ورود به حساب کاربری</span>
+            <span>برای ادامه اطلاعات حساب خود را وارد کنید</span>
             <input type="email" placeholder="ایمیل" value={email}
                    onChange={(event) => setEmail(event.target.value)} required />
             <input type="password" placeholder="رمز عبور" value={password}
                    onChange={(event) => setPassword(event.target.value)} required />
             <button type="submit" disabled={loading}>
-                {loading ? 'در حال ثبت‌نام…' : 'ثبت‌نام'}
+                {loading ? 'در حال ورود…' : 'ورود'}
             </button>
             {message && <p role="status">{message}</p>}
         </form>
