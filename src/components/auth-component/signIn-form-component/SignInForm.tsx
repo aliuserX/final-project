@@ -24,7 +24,11 @@ export default function SignInForm() {
             <span>برای ادامه، اطلاعات حساب خود را وارد کنید</span>
             <div className={SignInStyle['form-input']}>
                 <input
+                    id="signin-email"
+                    name="email"
                     type="email"
+                    autoComplete="email"
+                    aria-label="ایمیل"
                     placeholder="ایمیل"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
@@ -40,7 +44,11 @@ export default function SignInForm() {
             </div>
             <div className={SignInStyle['form-input']}>
                 <input
+                    id="signin-password"
+                    name="password"
                     type="password"
+                    autoComplete="current-password"
+                    aria-label="رمز عبور"
                     placeholder="رمز عبور"
                     value={password}
                     onChange={(event) => setPassword(event.target.value)}

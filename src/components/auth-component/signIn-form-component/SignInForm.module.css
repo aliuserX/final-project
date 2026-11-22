@@ -11,7 +11,7 @@ form span {
     display: block;
     text-align: center;
 }
-form span:nth-of-type(1) {
+form span:first-of-type{
     font-size: 14px;
     font-weight: bold;
 }

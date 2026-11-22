@@ -23,6 +23,9 @@ export default function SignUpForm() {
             <span>ثبت‌نام</span>
             <div className={SignUpStyle['form-input']}>
                 <input
+                    id="signup-email"
+                    name="email"
+                    autoComplete="email"
                     type="email"
                     placeholder="ایمیل"
                     value={email}
@@ -39,7 +42,10 @@ export default function SignUpForm() {
             </div>
             <div className={SignUpStyle['form-input']}>
                 <input
+                    id="signup-password"
+                    name="password"
                     type="password"
+                    autoComplete="new-password"
                     placeholder="رمز عبور"
                     value={password}
                     onChange={(event) => setPassword(event.target.value)}
