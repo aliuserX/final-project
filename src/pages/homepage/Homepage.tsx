@@ -1,9 +1,9 @@
-import HomePageStyle from './Homepage.module.css'
+import HeroSectionComponent from "../../components/hero-section-component/heroSectionComponent.tsx";
 
 function HomePage() {
     return (
         <>
-            <h1 className={HomePageStyle['color-green']}>سلام</h1>
+            <HeroSectionComponent />
         </>
     )
 }
