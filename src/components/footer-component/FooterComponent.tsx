@@ -44,7 +44,7 @@ function FooterComponent() {
                 پشتیبانی
             </button>
             <NavLink
-                to="/login"
+                to="/"
                 end
                 className={({ isActive }) =>
                     `${FooterComponentStyle["footer-button"]} ${
