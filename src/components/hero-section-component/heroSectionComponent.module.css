@@ -17,7 +17,7 @@ section h2 {
 section span{
     font-size: 15px;
 }
-section button{
+.member-button{
     box-shadow: none;
     border: 0;
     background-color: #12A593;
