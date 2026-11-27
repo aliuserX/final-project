@@ -17,7 +17,7 @@
 .hero-section span{
     font-size: 15px;
 }
-.member-button{
+.hero-section-login-button{
     box-shadow: none;
     border: 0;
     background-color: #12A593;
@@ -26,14 +26,8 @@
     padding: 10px 25px;
     cursor: pointer;
     user-select: none;
-}
-.add-member-button{
-    box-shadow: none;
-    border: 1px solid #12A593;
-    background-color: rgb(18 165 147 / 0.02);
-    border-radius: 7px;
-    color: #12A593;
-    padding: 10px 25px;
-    cursor: pointer;
-    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }

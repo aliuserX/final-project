@@ -54,6 +54,12 @@ function EditMemberPage() {
                     </div>
                 ))}
             </div>
+            <iframe
+                src="https://copyarzan.ir/"
+                title="دموی سایت کپی ارزان"
+                loading="lazy"
+                style={{ width: "100%", height: "80vh", border: 0 }}
+            />
         </>
     )
 }

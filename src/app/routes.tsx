@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import HomePage from '../pages/homepage/Homepage';
 import App from "./App.tsx";
-import EditMemberPage from "../pages/edit-member-page/EditMemberPage.tsx";
+import TeamListPage from "../pages/team-list-page/TeamListPage.tsx";
 
 
 export const router = createBrowserRouter([
@@ -14,8 +14,8 @@ export const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: '/EditMember',
-                element: <EditMemberPage />,
+                path: '/teamList',
+                element: <TeamListPage />,
             },
 
         ]
