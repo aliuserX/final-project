@@ -43,7 +43,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #F7F8FC;
-    padding: 0 10px;
 }
 button,
 input,
@@ -56,4 +55,13 @@ select {
     display: flex;
     flex-direction: column;
     min-width: 0;
+}
+@media (max-width: 767px) {
+    html {
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
 }

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import HomePage from '../pages/homepage/Homepage';
 import App from "./App.tsx";
+import TeamListPage from "../pages/team-list-page/TeamListPage.tsx";
 
 
 export const router = createBrowserRouter([
@@ -12,6 +13,11 @@ export const router = createBrowserRouter([
                 index: true,
                 element: <HomePage />,
             },
+            {
+                path: '/teamList',
+                element: <TeamListPage />,
+            },
+
         ]
     },
 ]);

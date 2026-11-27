@@ -3,55 +3,53 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 40px;
-    flex-shrink: 0;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    background: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.main-header-div{
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 5px;
-    background: white;
-    max-width: 1200px;
-    margin: 10px auto;
-    border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    background-color: transparent;
+    padding: 0 10px;
+    position: relative;
 }
-header a{
+.main-header-div a{
     display: flex;
     align-items: center;
     gap: 5px;
     color: black;
     text-decoration: none;
+    flex-shrink: 0;
 }
-.header-action-buttons{
+.header-action-buttons-div{
     display: flex;
+    height: 100%;
     align-items: center;
     gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.header-action-buttons a{
+.header-action-buttons-div a{
     padding: 0 5px;
     border-bottom: 2px solid transparent;
-    height: 30px;
+    height: 100%;
 }
 .active-header-action-button{
-    color: #0055ff;
-    border-bottom: 2px solid #0055ff !important;
-}
-.menu-button{
-    display: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
+    color : #12A593 !important;
+    border-bottom: 2px solid #12A593 !important;
 }
 @media (max-width: 630px) {
-    .header-action-buttons {
+    .header-action-buttons-div {
         display: none;
-    }
-    .menu-button {
-        display: block;
     }
 }

@@ -1,9 +1,17 @@
-import HomePageStyle from './Homepage.module.css'
+import HeroSectionComponent from "../../components/hero-section-component/heroSectionComponent.tsx";
+import TopMembersSectionComponent
+    from "../../components/top-members-section-component/TopMembersSectionComponent.tsx";
+import TopTeamsSectionComponent from "../../components/top-teams-section-component/TopTeamsSectionComponent.tsx";
+import TopProjectsSectionComponent
+    from "../../components/top-projects-section-component/TopProjectsSectionComponent.tsx";
 
 function HomePage() {
     return (
         <>
-            <h1 className={HomePageStyle['color-green']}>سلام</h1>
+            <HeroSectionComponent />
+            <TopTeamsSectionComponent />
+            <TopProjectsSectionComponent />
+            <TopMembersSectionComponent />
         </>
     )
 }
