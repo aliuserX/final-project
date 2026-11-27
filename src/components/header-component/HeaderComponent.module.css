@@ -5,10 +5,12 @@ header {
     z-index: 10;
     height: 50px;
     align-items: center;
-    background: white;
     border-bottom: 1px solid #cccccc;
     display: flex;
     justify-content: center;
+    background: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .main-header-div{
     width: 100%;
@@ -49,8 +51,5 @@ header {
 @media (max-width: 630px) {
     .header-action-buttons-div {
         display: none;
-    }
-    .menu-button {
-        display: block;
     }
 }

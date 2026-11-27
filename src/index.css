@@ -56,3 +56,12 @@ select {
     flex-direction: column;
     min-width: 0;
 }
+@media (max-width: 767px) {
+    html {
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+}
